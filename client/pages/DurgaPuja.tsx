@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Layout from "@/components/Layout";
+
 import LoginModal from "@/components/auth/LoginModal";
 import SignupModal from "@/components/auth/SignupModal";
 import { 
@@ -155,7 +155,7 @@ export default function DurgaPuja() {
   const selectedTourData = tourPackages.find(tour => tour.id === selectedTour);
 
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div
@@ -485,6 +485,6 @@ export default function DurgaPuja() {
         onClose={() => setShowSignupModal(false)}
                 onSwitchToLogin={handleSwitchToLogin}
       />
-    </Layout>
+    </>
   );
 }

@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Layout from "@/components/Layout";
+
 import LocationViewer from "@/components/LocationViewer";
 import LoginModal from "@/components/auth/LoginModal";
 import SignupModal from "@/components/auth/SignupModal";
@@ -1212,7 +1212,7 @@ export default function FeaturedPandals() {
       ]
     },
     "NEW_ALIPPUR": {
-      stationName: "New Alipur Railway",
+      stationName: "New Alippur Railway",
       metroName: "Kalighat Metro",
       color: "from-red-500 to-rose-500",
       pandals: [
@@ -1333,6 +1333,313 @@ export default function FeaturedPandals() {
           metroLine: "Blue Line"
         }
       ]
+    },
+    "DHAKURIA": {
+      stationName: "Dhakuria Railway",
+      metroName: "Rabindra Sadan Metro",
+      color: "from-cyan-500 to-blue-500",
+      pandals: [
+        {
+          id: "rs11",
+          name: "Dhakuria Sarbojonin",
+          railwayStation: "DHAKURIA",
+          theme: "Community Pride",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2Fda41d7c4013c415cbc5f95000e6abe40?format=webp&width=800",
+          description: "Strong community puja representing local pride and neighborhood participation.",
+          highlights: ["Community pride", "Local participation", "Traditional values", "Neighborhood unity"],
+          rating: 4.5,
+          crowdLevel: "Moderate",
+          bestTime: "Evening 6-8 PM",
+          established: "1965",
+          walkingTime: "3 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "15 minutes",
+          metroLine: "North-South Line"
+        },
+        {
+          id: "rs12",
+          name: "Selimpur Pally",
+          railwayStation: "DHAKURIA",
+          theme: "Heritage Preservation",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2Ffe26ed4aff714dc9b1df4f10eccbaede?format=webp&width=800",
+          description: "Focuses on preserving local heritage and cultural traditions of the area.",
+          highlights: ["Heritage preservation", "Cultural traditions", "Local history", "Community heritage"],
+          rating: 4.4,
+          crowdLevel: "Moderate",
+          bestTime: "Morning 9-11 AM",
+          established: "1958",
+          walkingTime: "5 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "18 minutes",
+          metroLine: "North-South Line"
+        }
+      ]
+    },
+    "JADAVPUR": {
+      stationName: "Jadavpur Railway",
+      metroName: "Jadavpur Metro",
+      color: "from-pink-500 to-rose-500",
+      pandals: [
+        {
+          id: "rs13",
+          name: "Jodhpur Park",
+          railwayStation: "JADAVPUR",
+          theme: "Educational Excellence",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2F47901b9e7c84434c93a704efed769a46?format=webp&width=800",
+          description: "Located near prestigious educational institutions, celebrating academic excellence and knowledge.",
+          highlights: ["Educational excellence", "Academic focus", "Student participation", "Knowledge celebration"],
+          rating: 4.7,
+          crowdLevel: "High",
+          bestTime: "Evening 5-7 PM",
+          established: "1962",
+          walkingTime: "4 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "8 minutes",
+          metroLine: "North-South Line"
+        },
+        {
+          id: "rs14",
+          name: "Jodhpur 95 Pally Association",
+          railwayStation: "JADAVPUR",
+          theme: "Association Unity",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2Fb0b9003d30f147e099b5a60cbe62e225?format=webp&width=800",
+          description: "Strong association-based puja promoting unity and collective celebration among residents.",
+          highlights: ["Association unity", "Collective celebration", "Resident participation", "Community bonding"],
+          rating: 4.6,
+          crowdLevel: "High",
+          bestTime: "Afternoon 4-6 PM",
+          established: "1995",
+          walkingTime: "6 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "10 minutes",
+          metroLine: "North-South Line"
+        },
+        {
+          id: "rs15",
+          name: "Santoshpur Lake Pally",
+          railwayStation: "JADAVPUR",
+          theme: "Lake Heritage",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2Fe62fe6238d1443bd856615f1b4e69f1e?format=webp&width=800",
+          description: "Celebrates the natural beauty and heritage of the lake area with water and nature themes.",
+          highlights: ["Lake heritage", "Natural beauty", "Water themes", "Environmental focus"],
+          rating: 4.5,
+          crowdLevel: "Moderate",
+          bestTime: "Morning 8-10 AM",
+          established: "1970",
+          walkingTime: "8 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "12 minutes",
+          metroLine: "North-South Line"
+        },
+        {
+          id: "rs16",
+          name: "Santoshpur Avenue South",
+          railwayStation: "JADAVPUR",
+          theme: "Avenue Culture",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2F11580775a4b646448bacabd3bf55cdaf?format=webp&width=800",
+          description: "Represents the modern avenue culture with contemporary themes and urban lifestyle.",
+          highlights: ["Avenue culture", "Contemporary themes", "Urban lifestyle", "Modern traditions"],
+          rating: 4.4,
+          crowdLevel: "High",
+          bestTime: "Evening 7-9 PM",
+          established: "1985",
+          walkingTime: "7 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "11 minutes",
+          metroLine: "North-South Line"
+        },
+        {
+          id: "rs17",
+          name: "Santoshpur Trikon Park",
+          railwayStation: "JADAVPUR",
+          theme: "Park Community",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2F88efebcbbbbd40599bddbd3a8058dc62?format=webp&width=800",
+          description: "Park-centered community puja emphasizing green spaces and environmental awareness.",
+          highlights: ["Park community", "Green spaces", "Environmental awareness", "Nature celebration"],
+          rating: 4.3,
+          crowdLevel: "Moderate",
+          bestTime: "Afternoon 3-5 PM",
+          established: "1978",
+          walkingTime: "9 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "13 minutes",
+          metroLine: "North-South Line"
+        }
+      ]
+    },
+    "BIDHAN_NAGAR_ROAD": {
+      stationName: "Bidhan Nagar Road Railway",
+      metroName: "Belgachia Metro",
+      color: "from-indigo-500 to-blue-500",
+      pandals: [
+        {
+          id: "rs18",
+          name: "Shreebhumi Sporting",
+          railwayStation: "BIDHAN_NAGAR_ROAD",
+          theme: "Sports Excellence",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2F2bc249d88c344b20a1ef3fb1825a6431?format=webp&width=800",
+          description: "Sports club puja celebrating athletic achievements and promoting fitness and healthy lifestyle.",
+          highlights: ["Sports excellence", "Athletic achievements", "Fitness promotion", "Healthy lifestyle"],
+          rating: 4.6,
+          crowdLevel: "High",
+          bestTime: "Evening 6-8 PM",
+          established: "1965",
+          walkingTime: "2 minutes",
+          railwayLine: "Sealdah Main Line",
+          metroWalkingTime: "4 minutes",
+          metroLine: "Blue Line"
+        },
+        {
+          id: "rs19",
+          name: "Ultadanga Sangrami",
+          railwayStation: "BIDHAN_NAGAR_ROAD",
+          theme: "Freedom Struggle",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2F34d32115e7914516a9517157a9b0259f?format=webp&width=800",
+          description: "Honors the freedom struggle and patriotic spirit with themes celebrating independence and national pride.",
+          highlights: ["Freedom struggle", "Patriotic spirit", "Independence themes", "National pride"],
+          rating: 4.7,
+          crowdLevel: "High",
+          bestTime: "Morning 9-11 AM",
+          established: "1947",
+          walkingTime: "3 minutes",
+          railwayLine: "Sealdah Main Line",
+          metroWalkingTime: "5 minutes",
+          metroLine: "Blue Line"
+        },
+        {
+          id: "rs20",
+          name: "Dharbagan Sarbojonin",
+          railwayStation: "BIDHAN_NAGAR_ROAD",
+          theme: "Traditional Community",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2Fda41d7c4013c415cbc5f95000e6abe40?format=webp&width=800",
+          description: "Traditional community puja maintaining authentic Bengali customs and neighborhood participation.",
+          highlights: ["Traditional customs", "Bengali heritage", "Neighborhood unity", "Cultural preservation"],
+          rating: 4.5,
+          crowdLevel: "Moderate",
+          bestTime: "Evening 5-7 PM",
+          established: "1955",
+          walkingTime: "4 minutes",
+          railwayLine: "Sealdah Main Line",
+          metroWalkingTime: "6 minutes",
+          metroLine: "Blue Line"
+        }
+      ]
+    },
+    "DUM_DUM_JN": {
+      stationName: "Dum Dum Junction Railway",
+      metroName: "Dum Dum Metro",
+      color: "from-green-500 to-emerald-500",
+      pandals: [
+        {
+          id: "rs21",
+          name: "Dum Dum Park Bharat Chakra",
+          railwayStation: "DUM_DUM_JN",
+          theme: "National Unity",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2Ffe26ed4aff714dc9b1df4f10eccbaede?format=webp&width=800",
+          description: "Celebrates national unity and the diversity of India with patriotic themes and cultural integration.",
+          highlights: ["National unity", "Cultural integration", "Patriotic themes", "Diversity celebration"],
+          rating: 4.8,
+          crowdLevel: "Very High",
+          bestTime: "Evening 7-9 PM",
+          established: "1950",
+          walkingTime: "5 minutes",
+          railwayLine: "Sealdah Main Line",
+          metroWalkingTime: "3 minutes",
+          metroLine: "Blue Line"
+        },
+        {
+          id: "rs22",
+          name: "Dum Dum Park Sarbojonin",
+          railwayStation: "DUM_DUM_JN",
+          theme: "Park Community",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2F47901b9e7c84434c93a704efed769a46?format=webp&width=800",
+          description: "Large park-based community puja bringing together diverse neighborhoods with inclusive celebrations.",
+          highlights: ["Park community", "Inclusive celebration", "Diverse neighborhoods", "Community bonding"],
+          rating: 4.7,
+          crowdLevel: "High",
+          bestTime: "Afternoon 4-6 PM",
+          established: "1962",
+          walkingTime: "4 minutes",
+          railwayLine: "Sealdah Main Line",
+          metroWalkingTime: "2 minutes",
+          metroLine: "Blue Line"
+        }
+      ]
+    },
+    "MAJHERHAT": {
+      stationName: "Majherhat Railway",
+      metroName: "Majherhat Metro",
+      color: "from-yellow-500 to-orange-500",
+      pandals: [
+        {
+          id: "rs23",
+          name: "Thakurpukur SB Park",
+          railwayStation: "MAJHERHAT",
+          theme: "Sports & Community",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2Fb0b9003d30f147e099b5a60cbe62e225?format=webp&width=800",
+          description: "Sports and community focused puja promoting athletic activities and healthy community life.",
+          highlights: ["Sports focus", "Community activities", "Athletic promotion", "Healthy lifestyle"],
+          rating: 4.5,
+          crowdLevel: "Moderate",
+          bestTime: "Evening 6-8 PM",
+          established: "1970",
+          walkingTime: "6 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "4 minutes",
+          metroLine: "Purple Line"
+        },
+        {
+          id: "rs24",
+          name: "Sabarna Roy Chowdhury Boro Bari",
+          railwayStation: "MAJHERHAT",
+          theme: "Aristocratic Heritage",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2Fe62fe6238d1443bd856615f1b4e69f1e?format=webp&width=800",
+          description: "Historic aristocratic family heritage with royal traditions and palatial celebrations.",
+          highlights: ["Aristocratic heritage", "Royal traditions", "Historic family", "Palatial celebrations"],
+          rating: 4.9,
+          crowdLevel: "Very High",
+          bestTime: "Morning 8-10 AM",
+          established: "1800",
+          walkingTime: "8 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "6 minutes",
+          metroLine: "Purple Line"
+        },
+        {
+          id: "rs25",
+          name: "Barisha Club",
+          railwayStation: "MAJHERHAT",
+          theme: "Club Excellence",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2F11580775a4b646448bacabd3bf55cdaf?format=webp&width=800",
+          description: "Premium club puja maintaining high standards of celebration with cultural programs and community events.",
+          highlights: ["Club excellence", "High standards", "Cultural programs", "Premium celebration"],
+          rating: 4.6,
+          crowdLevel: "High",
+          bestTime: "Evening 7-9 PM",
+          established: "1958",
+          walkingTime: "7 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "5 minutes",
+          metroLine: "Purple Line"
+        },
+        {
+          id: "rs26",
+          name: "Behala Natun Sangha",
+          railwayStation: "MAJHERHAT",
+          theme: "New Generation",
+          image: "https://cdn.builder.io/api/v1/image/assets%2F2477f586e9364b7a9fa52db217da2d5c%2F88efebcbbbbd40599bddbd3a8058dc62?format=webp&width=800",
+          description: "Modern organization representing new generation values while preserving traditional festival spirit.",
+          highlights: ["New generation", "Modern values", "Traditional spirit", "Youth engagement"],
+          rating: 4.5,
+          crowdLevel: "High",
+          bestTime: "Afternoon 3-5 PM",
+          established: "1980",
+          walkingTime: "5 minutes",
+          railwayLine: "Sealdah-Budge Budge Line",
+          metroWalkingTime: "3 minutes",
+          metroLine: "Purple Line"
+        }
+      ]
     }
   };
 
@@ -1358,11 +1665,16 @@ export default function FeaturedPandals() {
       ];
     } else {
       return [
-        { id: "all", name: "All Railway Stations", count: "12", color: "from-green-600 to-emerald-600" },
+        { id: "all", name: "All Railway Stations", count: "26", color: "from-green-600 to-emerald-600" },
         { id: "TOLLYGUNGE", name: "Tollygunge", count: "4", color: "from-emerald-500 to-teal-500" },
         { id: "NEW_ALIPPUR", name: "New Alippur", count: "2", color: "from-red-500 to-rose-500" },
         { id: "BALLYGUNGE_JN", name: "Ballygunge Jn", count: "2", color: "from-amber-500 to-orange-500" },
-        { id: "SEALDAH", name: "Sealdah", count: "4", color: "from-violet-500 to-purple-500" }
+        { id: "SEALDAH", name: "Sealdah", count: "2", color: "from-violet-500 to-purple-500" },
+        { id: "DHAKURIA", name: "Dhakuria", count: "2", color: "from-cyan-500 to-blue-500" },
+        { id: "JADAVPUR", name: "Jadavpur", count: "5", color: "from-pink-500 to-rose-500" },
+        { id: "BIDHAN_NAGAR_ROAD", name: "Bidhan Nagar Road", count: "3", color: "from-indigo-500 to-blue-500" },
+        { id: "DUM_DUM_JN", name: "Dum Dum Jn", count: "2", color: "from-green-500 to-emerald-500" },
+        { id: "MAJHERHAT", name: "Majherhat", count: "4", color: "from-yellow-500 to-orange-500" }
       ];
     }
   };
@@ -1439,16 +1751,16 @@ export default function FeaturedPandals() {
       ];
     } else {
       return [
-        { number: "12+", label: "Railway Station Pandals", icon: <Building className="h-6 w-6" /> },
-        { number: "4", label: "Railway Stations", icon: <TramFront className="h-6 w-6" /> },
-        { number: "1M+", label: "Annual Visitors", icon: <Users className="h-6 w-6" /> },
+        { number: "26+", label: "Railway Station Pandals", icon: <Building className="h-6 w-6" /> },
+        { number: "8", label: "Railway Stations", icon: <TramFront className="h-6 w-6" /> },
+        { number: "2M+", label: "Annual Visitors", icon: <Users className="h-6 w-6" /> },
         { number: "5", label: "Days of Celebration", icon: <Calendar className="h-6 w-6" /> }
       ];
     }
   };
 
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
                 <div
@@ -2031,6 +2343,6 @@ export default function FeaturedPandals() {
         onClose={() => setShowSignupModal(false)}
         onSwitchToLogin={handleSwitchToLogin}
       />
-    </Layout>
+    </>
   );
 }

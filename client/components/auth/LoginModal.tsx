@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Eye, EyeOff, Mail, Lock } from "lucide-react";
+import { useAuth } from "@/contexts/AuthContext";
 
 interface LoginModalProps {
   isOpen: boolean;
@@ -12,6 +13,7 @@ interface LoginModalProps {
 }
 
 export default function LoginModal({ isOpen, onClose, onSwitchToSignup }: LoginModalProps) {
+  const { login } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -20,16 +22,17 @@ export default function LoginModal({ isOpen, onClose, onSwitchToSignup }: LoginM
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // For demo purposes, just close the modal
-    setIsLoading(false);
-    onClose();
-    
-    // Here you would typically handle the actual login
-    console.log("Login attempted with:", { email, password });
+
+    try {
+      await login(email, password);
+      setIsLoading(false);
+      onClose();
+      setEmail("");
+      setPassword("");
+    } catch (error) {
+      setIsLoading(false);
+      console.error("Login error:", error);
+    }
   };
 
   return (

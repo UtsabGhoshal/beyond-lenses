@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Layout from "@/components/Layout";
 import LoginModal from "@/components/auth/LoginModal";
 import SignupModal from "@/components/auth/SignupModal";
 import { Star, MapPin, Calendar, Users, ArrowRight, Plane, Mountain, Palmtree, Building } from "lucide-react";
@@ -79,7 +78,7 @@ export default function Index() {
   ];
 
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
                         <div
@@ -480,6 +479,6 @@ export default function Index() {
         onClose={() => setShowSignupModal(false)}
         onSwitchToLogin={handleSwitchToLogin}
       />
-    </Layout>
+    </>
   );
 }
