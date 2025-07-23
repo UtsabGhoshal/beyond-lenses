@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Layout from "@/components/Layout";
+
 import { ArrowRight, MessageCircle, Construction } from "lucide-react";
 
 interface PlaceholderPageProps {
@@ -16,7 +16,7 @@ export default function PlaceholderPage({
   icon = <Construction className="h-12 w-12" /> 
 }: PlaceholderPageProps) {
   return (
-    <Layout>
+    <>
       <div className="min-h-[60vh] flex items-center justify-center py-20">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <Card className="border-2 border-dashed border-gray-300">
@@ -63,6 +63,6 @@ export default function PlaceholderPage({
           </Card>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

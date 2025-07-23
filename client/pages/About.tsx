@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -38,7 +37,7 @@ export default function About() {
   ];
 
   return (
-    <Layout>
+    <>
       {/* Hero Section with Parallax Effect */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background with parallax */}
@@ -271,6 +270,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 }

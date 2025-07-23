@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Eye, EyeOff, Mail, Lock, User, Phone } from "lucide-react";
+import { useAuth } from "@/contexts/AuthContext";
 
 interface SignupModalProps {
   isOpen: boolean;
@@ -13,6 +14,7 @@ interface SignupModalProps {
 }
 
 export default function SignupModal({ isOpen, onClose, onSwitchToLogin }: SignupModalProps) {
+  const { signup } = useAuth();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -27,28 +29,35 @@ export default function SignupModal({ isOpen, onClose, onSwitchToLogin }: Signup
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords don't match!");
       return;
     }
-    
+
     if (!acceptTerms) {
       alert("Please accept the terms and conditions");
       return;
     }
-    
+
     setIsLoading(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // For demo purposes, just close the modal
-    setIsLoading(false);
-    onClose();
-    
-    // Here you would typically handle the actual signup
-    console.log("Signup attempted with:", formData);
+
+    try {
+      await signup(formData);
+      setIsLoading(false);
+      onClose();
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        password: "",
+        confirmPassword: ""
+      });
+      setAcceptTerms(false);
+    } catch (error) {
+      setIsLoading(false);
+      console.error("Signup error:", error);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {

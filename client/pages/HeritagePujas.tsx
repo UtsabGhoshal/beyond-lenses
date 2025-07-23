@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Layout from "@/components/Layout";
+
 import LocationViewer from "@/components/LocationViewer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -345,7 +345,7 @@ export default function HeritagePujas() {
   };
 
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 overflow-hidden">
         {/* Background decorations */}
@@ -571,6 +571,6 @@ export default function HeritagePujas() {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 }

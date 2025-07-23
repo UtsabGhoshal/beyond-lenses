@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import Layout from "@/components/Layout";
+
 import LoginModal from "@/components/auth/LoginModal";
 import SignupModal from "@/components/auth/SignupModal";
 import { Star, MapPin, Calendar, Users, Search, Filter, Clock, Camera } from "lucide-react";
@@ -140,7 +140,7 @@ export default function Destinations() {
   });
 
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div
@@ -331,6 +331,6 @@ export default function Destinations() {
         onClose={() => setShowSignupModal(false)}
         onSwitchToLogin={handleSwitchToLogin}
       />
-    </Layout>
+    </>
   );
 }
